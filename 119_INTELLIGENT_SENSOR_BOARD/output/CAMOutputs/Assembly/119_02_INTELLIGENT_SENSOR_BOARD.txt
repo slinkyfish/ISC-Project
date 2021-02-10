@@ -1,0 +1,11 @@
+Partlist exported from C:/Users/steph/OneDrive/Documents/EAGLE/projects/119_INTELLIGENT_SENSOR_BOARD/119_02_INTELLIGENT_SENSOR_BOARD.sch at 01/01/2021 15:46
+
+Qty Value     Device           Package      Parts                         Description POPULARITY TP_SIGNAL_NAME
+2             CAP0805          0805         C1, C2                        Capacitor                            
+1             LEDCHIP-LED0805  CHIP-LED0805 PWR                           LED         68                       
+2             M03PTH           1X03         J1, SL1                       Header 3                             
+2             M14              1X14         SENSOR_BOARD, UKMARSBOT       Header 14                            
+2             RESISTOR0805-RES 0805         R_SCL, R_SDA                  Resistor                             
+1   470R      RESISTOR0805-RES 0805         R_LED                         Resistor                             
+1   ATTINY814 ATTINY814        ATTINY814    U$1                                                                
+3   TPB1,27   TPB1,27          B1,27        CONN_GND, CONN_UPDI, CONN_VDD Test pad    19                       
