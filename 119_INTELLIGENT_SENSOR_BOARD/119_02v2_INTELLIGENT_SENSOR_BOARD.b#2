@@ -19,9 +19,9 @@
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -146,8 +146,6 @@
 <wire x1="13.64" y1="-0.9525" x2="13.64" y2="36.5025" width="0" layer="20"/>
 <wire x1="13.64" y1="36.5025" x2="-0.9525" y2="36.5025" width="0" layer="20"/>
 <wire x1="-0.9525" y1="36.5025" x2="-0.9525" y2="-0.9525" width="0" layer="20"/>
-<text x="7.62" y="2.2225" size="0.8128" layer="25" font="vector" ratio="16" rot="SR270" align="center-left">5V</text>
-<text x="5.08" y="2.2225" size="0.8128" layer="25" font="vector" ratio="16" rot="SR270" align="center-left">3V3</text>
 <text x="6.35" y="10.16" size="0.8128" layer="25" font="vector" ratio="16" rot="SR270" align="center">GND</text>
 <text x="3.81" y="10.16" size="0.8128" layer="25" font="vector" ratio="16" rot="SR270" align="center">VDD</text>
 <text x="8.89" y="10.16" size="0.8128" layer="25" font="vector" ratio="16" rot="SR270" align="center">PRG</text>
@@ -486,6 +484,37 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
+<library name="SparkFun-Jumpers">
+<description>&lt;h3&gt;SparkFun Jumpers&lt;/h3&gt;
+In this library you'll find jumpers, or other semipermanent means of changing current paths. The least permanent form is the solder jumper. These can be changed by adding, removing, or moving solder. In cases that are less likely to be changed we have jumpers that are connected with traces. These can be cut with a razor, or reconnected with solder. Reference designator JP.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SMT-JUMPER_2_NO_SILK">
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="0.8636" y1="-1.016" x2="-0.8636" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="0.8636" y1="1.016" x2="1.1176" y2="0.762" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1.1176" y1="0.762" x2="-0.8636" y2="1.016" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1.1176" y1="-0.762" x2="-0.8636" y2="-1.016" width="0.2032" layer="21" curve="90"/>
+<wire x1="0.8636" y1="-1.016" x2="1.1176" y2="-0.762" width="0.2032" layer="21" curve="90"/>
+<wire x1="1.1176" y1="-0.762" x2="1.1176" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="-1.1176" y1="-0.762" x2="-1.1176" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="-0.8636" y1="1.016" x2="0.8636" y2="1.016" width="0.2032" layer="21"/>
+<smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -724,11 +753,23 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="19" x="3.81" y="12.065" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="3.81" y="12.065" size="1.778" layer="27" display="off"/>
 </element>
-<element name="V_SEL" library="SparkFun-Connectors" package="1X03" value="" x="8.89" y="3.81" smashed="yes" rot="R180">
-<attribute name="VALUE" x="12.446" y="7.6454" size="1.27" layer="27" ratio="10" rot="R180"/>
-</element>
 <element name="PRG" library="SparkFun-Connectors" package="1X03" value="" x="8.89" y="7.62" smashed="yes" rot="R180">
 <attribute name="VALUE" x="10.16" y="10.795" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="3V3" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NO_SILK" value="JUMPER-SMT_2_NO_SILK" x="3.81" y="3.81" smashed="yes" rot="R180">
+<attribute name="NAME" x="1.143" y="3.81" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
+</element>
+<element name="5V" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NO_SILK" value="JUMPER-SMT_2_NO_SILK" x="3.81" y="1.27" smashed="yes" rot="R180">
+<attribute name="NAME" x="1.143" y="1.27" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
+</element>
+<element name="5VBRD" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NO_SILK" value="JUMPER-SMT_2_NO_SILK" x="6.35" y="3.81" smashed="yes" rot="R180">
+<attribute name="NAME" x="6.35" y="2.667" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
+</element>
+<element name="3V3BRD" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NO_SILK" value="JUMPER-SMT_2_NO_SILK" x="6.35" y="1.27" smashed="yes" rot="R180">
+<attribute name="NAME" x="6.35" y="2.667" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
+</element>
+<element name="LNK" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NO_SILK" value="JUMPER-SMT_2_NO_SILK" x="8.89" y="1.27" smashed="yes">
+<attribute name="NAME" x="8.89" y="2.413" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 </element>
 </elements>
 <signals>
@@ -860,13 +901,14 @@ design rules under a new name.</description>
 <wire x1="8.255" y1="33.655" x2="8.255" y2="32.65" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V">
-<contactref element="SENSOR_BOARD" pad="13"/>
 <contactref element="UKMARSBOT" pad="13"/>
-<contactref element="V_SEL" pad="3"/>
-<wire x1="3.81" y1="3.81" x2="1.27" y2="3.81" width="0.254" layer="16"/>
-<wire x1="3.81" y1="3.81" x2="6.35" y2="1.27" width="0.254" layer="16"/>
-<wire x1="6.35" y1="1.27" x2="8.89" y2="1.27" width="0.254" layer="16"/>
-<wire x1="8.89" y1="1.27" x2="11.43" y2="3.81" width="0.254" layer="16"/>
+<contactref element="3V3" pad="2"/>
+<contactref element="5VBRD" pad="2"/>
+<wire x1="1.27" y1="3.81" x2="3.4036" y2="3.81" width="0.3048" layer="1"/>
+<wire x1="5.9436" y1="3.81" x2="4.6736" y2="5.08" width="0.3048" layer="1"/>
+<wire x1="4.6736" y1="5.08" x2="3.81" y2="5.08" width="0.3048" layer="1"/>
+<wire x1="3.81" y1="5.08" x2="3.4036" y2="4.6736" width="0.3048" layer="1"/>
+<wire x1="3.4036" y1="4.6736" x2="3.4036" y2="3.81" width="0.3048" layer="1"/>
 </signal>
 <signal name="VDD">
 <contactref element="U$1" pad="P$1"/>
@@ -877,7 +919,6 @@ design rules under a new name.</description>
 <contactref element="R_SCL" pad="2"/>
 <contactref element="R_SDA" pad="2"/>
 <contactref element="CONN_VDD" pad="TP"/>
-<contactref element="V_SEL" pad="2"/>
 <wire x1="6.35" y1="28.84" x2="8.255" y2="28.84" width="0.254" layer="1"/>
 <wire x1="6.35" y1="28.84" x2="4.595" y2="27.04" width="0.254" layer="1"/>
 <wire x1="4.595" y1="27.04" x2="4.445" y2="26.89" width="0.254" layer="1"/>
@@ -896,9 +937,12 @@ design rules under a new name.</description>
 <contactref element="PRG" pad="3"/>
 <wire x1="4.445" y1="25.7175" x2="3.81" y2="25.0825" width="0.254" layer="16"/>
 <wire x1="3.81" y1="25.0825" x2="3.81" y2="7.62" width="0.254" layer="16"/>
-<wire x1="6.35" y1="3.81" x2="3.81" y2="6.35" width="0.254" layer="16"/>
 <wire x1="3.81" y1="6.35" x2="3.81" y2="7.62" width="0.254" layer="16"/>
 <wire x1="3.81" y1="12.065" x2="3.81" y2="7.62" width="0.254" layer="1"/>
+<contactref element="5V" pad="1"/>
+<contactref element="3V3" pad="1"/>
+<wire x1="4.2164" y1="1.27" x2="4.2164" y2="3.81" width="0.3048" layer="1"/>
+<wire x1="4.2164" y1="3.81" x2="3.81" y2="6.35" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SCL">
 <contactref element="UKMARSBOT" pad="3"/>
@@ -970,12 +1014,34 @@ design rules under a new name.</description>
 <wire x1="2.38125" y1="20.955" x2="3.65" y2="20.955" width="0.254" layer="1"/>
 </signal>
 <signal name="3V3">
-<contactref element="V_SEL" pad="1"/>
 <contactref element="UKMARSBOT" pad="14"/>
+<contactref element="5V" pad="2"/>
+<contactref element="3V3BRD" pad="2"/>
+<wire x1="1.27" y1="1.27" x2="2.54" y2="1.27" width="0.3048" layer="1"/>
+<wire x1="2.54" y1="1.27" x2="3.4036" y2="1.27" width="0.3048" layer="1"/>
+<wire x1="5.9436" y1="1.27" x2="4.8895" y2="0.2159" width="0.3048" layer="1"/>
+<wire x1="3.5941" y1="0.2159" x2="2.54" y2="1.27" width="0.3048" layer="1"/>
+<wire x1="4.8895" y1="0.2159" x2="3.5941" y2="0.2159" width="0.3048" layer="1"/>
+</signal>
+<signal name="5V_BRD">
+<contactref element="5VBRD" pad="1"/>
+<contactref element="LNK" pad="2"/>
+<contactref element="SENSOR_BOARD" pad="13"/>
+<wire x1="6.7564" y1="3.81" x2="9.36625" y2="3.81" width="0.3048" layer="1"/>
+<wire x1="9.36625" y1="3.81" x2="11.43" y2="3.81" width="0.3048" layer="1"/>
+<wire x1="9.2964" y1="1.27" x2="9.2964" y2="1.6764" width="0.3048" layer="1"/>
+<wire x1="9.2964" y1="1.27" x2="9.2964" y2="3.74015" width="0.3048" layer="1"/>
+<wire x1="9.2964" y1="3.74015" x2="9.36625" y2="3.81" width="0.3048" layer="1"/>
+</signal>
+<signal name="3V3_BRD">
+<contactref element="3V3BRD" pad="1"/>
+<contactref element="LNK" pad="1"/>
 <contactref element="SENSOR_BOARD" pad="14"/>
-<wire x1="11.43" y1="1.27" x2="8.89" y2="1.27" width="0.254" layer="1"/>
-<wire x1="8.89" y1="3.81" x2="8.89" y2="1.27" width="0.254" layer="1"/>
-<wire x1="8.89" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="1"/>
+<wire x1="8.4836" y1="1.27" x2="7.62" y2="1.27" width="0.3048" layer="1"/>
+<wire x1="7.62" y1="1.27" x2="6.7564" y2="1.27" width="0.3048" layer="1"/>
+<wire x1="11.43" y1="1.27" x2="10.3759" y2="0.2159" width="0.3048" layer="1"/>
+<wire x1="10.3759" y1="0.2159" x2="7.62" y2="0.2159" width="0.3048" layer="1"/>
+<wire x1="7.62" y1="0.2159" x2="7.62" y2="1.27" width="0.3048" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

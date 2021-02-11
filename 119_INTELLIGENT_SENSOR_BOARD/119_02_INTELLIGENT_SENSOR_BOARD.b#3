@@ -8,20 +8,20 @@
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="6.25" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -166,12 +166,8 @@ UKMARS by
 S. Pithouse</text>
 <text x="6.35" y="31.115" size="0.762" layer="26" font="vector" ratio="16" rot="MR180" align="center">I2C Sensor
 Controller</text>
-<wire x1="2.54" y1="1.27" x2="4.1275" y2="1.27" width="0.1524" layer="26"/>
-<wire x1="4.1275" y1="1.27" x2="4.445" y2="0.9525" width="0.1524" layer="26"/>
-<wire x1="4.445" y1="0.9525" x2="5.08" y2="0.9525" width="0.1524" layer="26"/>
-<wire x1="10.16" y1="1.27" x2="8.5725" y2="1.27" width="0.1524" layer="26"/>
-<wire x1="8.5725" y1="1.27" x2="8.255" y2="0.9525" width="0.1524" layer="26"/>
-<wire x1="8.255" y1="0.9525" x2="7.62" y2="0.9525" width="0.1524" layer="26"/>
+<wire x1="2.54" y1="0.9525" x2="5.08" y2="0.9525" width="0.1524" layer="26"/>
+<wire x1="10.16" y1="0.9525" x2="7.62" y2="0.9525" width="0.1524" layer="26"/>
 <wire x1="3.175" y1="2.2225" x2="5.08" y2="2.2225" width="0.1524" layer="26"/>
 <wire x1="3.175" y1="2.2225" x2="2.54" y2="2.8575" width="0.1524" layer="26"/>
 <wire x1="10.16" y1="2.8575" x2="9.525" y2="2.2225" width="0.1524" layer="26"/>
@@ -179,19 +175,15 @@ Controller</text>
 <wire x1="2.54" y1="6.0325" x2="5.08" y2="6.0325" width="0.1524" layer="26"/>
 <wire x1="10.16" y1="6.0325" x2="7.62" y2="6.0325" width="0.1524" layer="26"/>
 <wire x1="10.16" y1="29.21" x2="9.8425" y2="28.8925" width="0.1524" layer="26"/>
-<wire x1="9.8425" y1="28.8925" x2="9.8425" y2="22.225" width="0.1524" layer="26"/>
-<wire x1="2.54" y1="34.29" x2="4.1275" y2="34.29" width="0.1524" layer="26"/>
-<wire x1="4.1275" y1="34.29" x2="4.445" y2="34.6075" width="0.1524" layer="26"/>
-<wire x1="4.445" y1="34.6075" x2="5.08" y2="34.6075" width="0.1524" layer="26"/>
-<wire x1="10.16" y1="34.29" x2="8.5725" y2="34.29" width="0.1524" layer="26"/>
-<wire x1="8.5725" y1="34.29" x2="8.255" y2="34.6075" width="0.1524" layer="26"/>
-<wire x1="8.255" y1="34.6075" x2="7.62" y2="34.6075" width="0.1524" layer="26"/>
+<wire x1="9.8425" y1="28.8925" x2="9.8425" y2="23.495" width="0.1524" layer="26"/>
+<wire x1="2.54" y1="34.6075" x2="5.08" y2="34.6075" width="0.1524" layer="26"/>
+<wire x1="10.16" y1="34.6075" x2="7.62" y2="34.6075" width="0.1524" layer="26"/>
 <wire x1="2.54" y1="32.0675" x2="3.175" y2="32.7025" width="0.1524" layer="26"/>
 <wire x1="3.175" y1="32.7025" x2="5.08" y2="32.7025" width="0.1524" layer="26"/>
 <wire x1="7.62" y1="32.7025" x2="9.525" y2="32.7025" width="0.1524" layer="26"/>
 <wire x1="9.525" y1="32.7025" x2="10.16" y2="32.0675" width="0.1524" layer="26"/>
-<wire x1="9.8425" y1="22.225" x2="9.2075" y2="21.59" width="0.1524" layer="26"/>
-<wire x1="9.2075" y1="21.59" x2="7.14375" y2="21.59" width="0.1524" layer="26"/>
+<wire x1="9.8425" y1="23.495" x2="7.9375" y2="21.59" width="0.1524" layer="26"/>
+<wire x1="7.9375" y1="21.59" x2="7.14375" y2="21.59" width="0.1524" layer="26"/>
 <wire x1="5.55625" y1="21.59" x2="2.54" y2="21.59" width="0.1524" layer="26"/>
 <wire x1="2.54" y1="21.59" x2="2.8575" y2="21.9075" width="0.1524" layer="26"/>
 <wire x1="2.8575" y1="21.9075" x2="2.8575" y2="21.2725" width="0.1524" layer="26"/>
@@ -206,6 +198,8 @@ Controller</text>
 <wire x1="4.28625" y1="23.8125" x2="5.55625" y2="23.8125" width="0.1524" layer="26"/>
 <wire x1="2.54" y1="26.67" x2="2.69875" y2="26.51125" width="0.1524" layer="26"/>
 <wire x1="2.69875" y1="26.51125" x2="2.69875" y2="25.4" width="0.1524" layer="26"/>
+<text x="6.35" y="13.97" size="0.6096" layer="26" font="vector" ratio="14" rot="MR0" align="center">119_02
+Jan2021</text>
 </plain>
 <libraries>
 <library name="Stephen">
@@ -730,10 +724,10 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="19" x="3.81" y="12.065" size="1.778" layer="27" display="off"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="3.81" y="12.065" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SL1" library="SparkFun-Connectors" package="1X03" value="" x="8.89" y="3.81" smashed="yes" rot="R180">
+<element name="V_SEL" library="SparkFun-Connectors" package="1X03" value="" x="8.89" y="3.81" smashed="yes" rot="R180">
 <attribute name="VALUE" x="12.446" y="7.6454" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="J1" library="SparkFun-Connectors" package="1X03" value="" x="8.89" y="7.62" smashed="yes" rot="R180">
+<element name="PRG" library="SparkFun-Connectors" package="1X03" value="" x="8.89" y="7.62" smashed="yes" rot="R180">
 <attribute name="VALUE" x="10.16" y="10.795" size="1.27" layer="27" rot="R180"/>
 </element>
 </elements>
@@ -857,7 +851,7 @@ design rules under a new name.</description>
 <wire x1="8.39315" y1="27.04" x2="9.29315" y2="27.94" width="0.254" layer="1"/>
 <wire x1="9.05" y1="24.765" x2="7.62" y2="24.765" width="0.254" layer="1"/>
 <via x="7.62" y="24.765" extent="1-16" drill="0.35"/>
-<contactref element="J1" pad="2"/>
+<contactref element="PRG" pad="2"/>
 <wire x1="6.35" y1="12.065" x2="6.35" y2="7.62" width="0.254" layer="1"/>
 <wire x1="6.35" y1="7.62" x2="6.35" y2="6.35" width="0.254" layer="1"/>
 <wire x1="10.16" y1="8.5504625" x2="10.16" y2="7.62" width="0.254" layer="16"/>
@@ -868,7 +862,7 @@ design rules under a new name.</description>
 <signal name="5V">
 <contactref element="SENSOR_BOARD" pad="13"/>
 <contactref element="UKMARSBOT" pad="13"/>
-<contactref element="SL1" pad="3"/>
+<contactref element="V_SEL" pad="3"/>
 <wire x1="3.81" y1="3.81" x2="1.27" y2="3.81" width="0.254" layer="16"/>
 <wire x1="3.81" y1="3.81" x2="6.35" y2="1.27" width="0.254" layer="16"/>
 <wire x1="6.35" y1="1.27" x2="8.89" y2="1.27" width="0.254" layer="16"/>
@@ -883,7 +877,7 @@ design rules under a new name.</description>
 <contactref element="R_SCL" pad="2"/>
 <contactref element="R_SDA" pad="2"/>
 <contactref element="CONN_VDD" pad="TP"/>
-<contactref element="SL1" pad="2"/>
+<contactref element="V_SEL" pad="2"/>
 <wire x1="6.35" y1="28.84" x2="8.255" y2="28.84" width="0.254" layer="1"/>
 <wire x1="6.35" y1="28.84" x2="4.595" y2="27.04" width="0.254" layer="1"/>
 <wire x1="4.595" y1="27.04" x2="4.445" y2="26.89" width="0.254" layer="1"/>
@@ -899,7 +893,7 @@ design rules under a new name.</description>
 <wire x1="3.65" y1="24.9225" x2="3.65" y2="24.765" width="0.254" layer="1"/>
 <wire x1="4.445" y1="26.89" x2="3.9075" y2="26.89" width="0.254" layer="1"/>
 <wire x1="3.9075" y1="26.89" x2="3.81" y2="26.9875" width="0.254" layer="1"/>
-<contactref element="J1" pad="3"/>
+<contactref element="PRG" pad="3"/>
 <wire x1="4.445" y1="25.7175" x2="3.81" y2="25.0825" width="0.254" layer="16"/>
 <wire x1="3.81" y1="25.0825" x2="3.81" y2="7.62" width="0.254" layer="16"/>
 <wire x1="6.35" y1="3.81" x2="3.81" y2="6.35" width="0.254" layer="16"/>
@@ -956,7 +950,7 @@ design rules under a new name.</description>
 <wire x1="6.111875" y1="17.383125" x2="6.111875" y2="19.685" width="0.254" layer="1"/>
 <wire x1="6.111875" y1="19.685" x2="6.111875" y2="21.828125" width="0.254" layer="1"/>
 <wire x1="9.05" y1="19.685" x2="6.111875" y2="19.685" width="0.254" layer="1"/>
-<contactref element="J1" pad="1"/>
+<contactref element="PRG" pad="1"/>
 <wire x1="8.89" y1="12.065" x2="8.89" y2="7.62" width="0.254" layer="1"/>
 <wire x1="8.89" y1="7.62" x2="6.35" y2="10.16" width="0.254" layer="16"/>
 <wire x1="6.35" y1="17.145" x2="6.35" y2="10.16" width="0.254" layer="16"/>
@@ -988,7 +982,7 @@ design rules under a new name.</description>
 <wire x1="2.38125" y1="20.955" x2="3.65" y2="20.955" width="0.254" layer="1"/>
 </signal>
 <signal name="3V3">
-<contactref element="SL1" pad="1"/>
+<contactref element="V_SEL" pad="1"/>
 <contactref element="UKMARSBOT" pad="14"/>
 <contactref element="SENSOR_BOARD" pad="14"/>
 <wire x1="11.43" y1="1.27" x2="8.89" y2="1.27" width="0.254" layer="1"/>
