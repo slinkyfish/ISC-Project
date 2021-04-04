@@ -21,6 +21,12 @@
 #define FASTBLINK 4
 #define SLOWBLINK 5
 
+#define SENSOR0 0
+#define SENSOR1 1
+#define SENSOR2 2
+#define SENSOR3 3
+#define SENSOR4 4
+
 class ISC
 {
     private:
@@ -34,6 +40,8 @@ class ISC
         void setThreshold(uint8_t sens, uint16_t threshVal);
         int sensor(uint8_t sensor);
         void ledMode(uint8_t mode);
+		void leftLED(uint8_t state);
+		void rightLED(uint8_t state);
         void setup(uint8_t sensor, uint8_t bits);
         void txPulse(uint8_t length);
         uint8_t states();

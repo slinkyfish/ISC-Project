@@ -92,3 +92,15 @@ uint8_t ISC::states(){
 void ISC::begin(uint8_t boardType){
     ISC::write(1, 1 | (boardType<<2), 1);
 }
+
+void ISC::leftLED(uint8_t state){
+     uint8_t ledState = ISC::read(5, 1) & 0b1<<6;	//preserve rightLED state
+	 ledState |= state<<7;							//combine with new left LED state
+	 ISC::write(5, ledState, 1);					//send to ISC
+}
+
+void ISC::rightLED(uint8_t state){
+     uint8_t ledState = ISC::read(5, 1) & 0b1<<7;	//preserve leftLED state
+	 ledState |= state<<6;							//combine with new left LED state
+	 ISC::write(5, ledState, 1);					//send to ISC
+}

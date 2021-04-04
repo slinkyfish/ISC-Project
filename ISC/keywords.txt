@@ -25,6 +25,8 @@ txPulse	KEYWORD2
 states	KEYWORD2
 read	KEYWORD2
 write	KEYWORD2
+leftLED	KEYWORD2
+rightLED	KEYWORD2
 
 ######################################
 # Constants (LITERAL1)
