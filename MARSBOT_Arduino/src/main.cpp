@@ -6,7 +6,6 @@
 
 ISC Isc;
 
-
 const uint8_t cornerSensor = 4;   //Give Sensor inputs meaningful names
 const uint8_t lSensor = 3;
 const uint8_t mSensor = 2;

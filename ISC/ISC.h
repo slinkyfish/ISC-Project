@@ -3,33 +3,23 @@
 
 #include "Arduino.h"
 
-//////SENSOR#SETUP parameters//////
 #define enb 1
 #define lowRes 2
 #define txEnb 4
-#define flip 32
+#define invert 32
 #define fallingInterrupt 64
 #define risingInterrupt 128
 
-//////BOARDTYPE parameters//////
 #define basicLineSensor 1
 #define basicWallSensor 2
 #define spLineSensor 3
 
-//////LEDCTRL parameters//////
 #define MASTERCTRL 0
 #define FREQOUT 1
 #define LEDOFF 2
 #define LEDBRDCTRL 3
 #define FASTBLINK 4
 #define SLOWBLINK 5
-
-//////SENSOR parameters//////
-#define SENSOR0 0
-#define SENSOR1 1
-#define SENSOR2 2
-#define SENSOR3 3
-#define SENSOR4 4
 
 class ISC
 {

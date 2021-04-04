@@ -1,0 +1,55 @@
+#######################################
+# Syntax Coloring Map
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+ISC	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+reset		KEYWORD2
+begin		KEYWORD2
+scanTime	KEYWORD2
+setThreshold	KEYWORD2
+getVal		KEYWORD2
+ledMode		KEYWORD2
+setLeftLED 	KEYWORD2
+setRightLED 	KEYWORD2
+configure	KEYWORD2
+txPulse	KEYWORD2
+states	KEYWORD2
+read	KEYWORD2
+write	KEYWORD2
+
+######################################
+# Constants (LITERAL1)
+#######################################
+SENSOR0	LITERAL1
+SENSOR1	LITERAL1
+SENSOR2	LITERAL1
+SENSOR3	LITERAL1
+SENSOR4	LITERAL1
+
+MASTERCTRL	LITERAL1
+FREQOUT		LITERAL1
+LEDOFF		LITERAL1
+LEDBRDCTRL	LITERAL1
+FASTBLINK	LITERAL1
+SLOWBLINK	LITERAL1
+
+enb		LITERAL1
+lowRes		LITERAL1
+txEnb		LITERAL1
+flip		LITERAL1
+fallingInterrupt	LITERAL1
+risingInterrupt		LITERAL1
+
+basicLineSensor	LITERAL1
+basicWallSensor	LITERAL1
+spLineSensor	LITERAL1
+customBoard	LITERAL1
