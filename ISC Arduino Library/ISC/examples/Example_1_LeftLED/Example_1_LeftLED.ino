@@ -1,8 +1,8 @@
 /*
  * Example_1_LeftLED
- * This example configures the ISC and controls the Left LED directly.
+ * This example configures the ISC and controls th Left LED directly.
  * By consulting the Library Documentation, as an extension, alter the code: 
- *  - to control the right LED
+ *  - to control the right LED directly
  *  - to blink slow for 5 seconds, and then turn the Left LED on (HINT: see example 1 for blink)
  */
 

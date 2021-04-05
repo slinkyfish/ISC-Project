@@ -65,7 +65,7 @@ int ISC::scanTime(){
     return(ISC::read(37, 2));
 }
 
-int ISC::sensor(uint8_t sensor){
+uint16_t ISC::getVal(uint8_t sensor){
     return(ISC::read(13+2*(sensor), 2));
 }
 
@@ -77,7 +77,7 @@ void ISC::ledMode(uint8_t mode){
     ISC::write(5, mode, 1);
 }
 
-void ISC::setup(uint8_t sensor, uint8_t bits){
+void ISC::configure(uint8_t sensor, uint8_t bits){
     ISC::write(7+(sensor), bits, 1);
 }
 
@@ -103,4 +103,16 @@ void ISC::rightLED(uint8_t state){
      uint8_t ledState = ISC::read(5, 1) & 0b1<<7;	//preserve leftLED state
 	 ledState |= state<<6;							//combine with new left LED state
 	 ISC::write(5, ledState, 1);					//send to ISC
+}
+
+void ISC::setInterrupts(uint8_t interrupts){
+     ISC::write(2, interrupts, 1);					//send to ISC
+}
+
+uint8_t ISC::getInterrupts(){
+     return(ISC::read(3, 1));
+}
+
+void ISC::clearInterrupts(uint8_t interrupts){
+	ISC::write(3, interrupts, 1);					//send to ISC
 }
